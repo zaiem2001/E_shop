@@ -1,0 +1,79 @@
+.navbar {
+  /* position: fixed; */
+
+  width: 100vw;
+  height: 80px;
+  top: 0;
+
+  border-bottom: 1px solid #cbcbcb;
+  /* background-color: black; */
+}
+
+.nav__wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 5px 25px;
+
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.nav__left {
+  flex: 1;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__title {
+  font-size: 30px;
+
+  font-family: "Montserrat", sans-serif;
+  font-family: "Patrick Hand SC", cursive;
+  margin-left: 15px;
+}
+
+.nav__title span {
+  color: orange;
+}
+
+.nav__center {
+  flex: 2;
+}
+
+.nav__link__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: 1px;
+}
+
+.nav__link {
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0 35px;
+  transition: all ease-in-out 150ms;
+}
+
+.nav__link:hover {
+  color: crimson;
+}
+
+.nav__right {
+  flex: 1;
+
+  /* padding: 0 10px; */
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav__right i {
+  cursor: pointer;
+  margin: 0 15px;
+}

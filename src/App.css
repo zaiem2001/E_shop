@@ -1,0 +1,408 @@
+.main {
+  width: 100vw;
+  height: calc(100vh - 80px);
+}
+
+.wrapper {
+  padding: 35px 25px;
+
+  display: flex;
+}
+
+/* ############################ LEFT PART #################################### */
+.main__left {
+  flex: 5;
+  padding: 15px 0;
+}
+
+.main__left__header {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+
+  height: 70px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.button {
+  padding: 15px 20px;
+  width: 150px;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 600;
+  border: 1px solid lightblue;
+  /* background-color: turquoise; */
+  border-radius: 20px;
+
+  transition: all ease-in-out 200ms;
+}
+
+.button:hover {
+  transform: scale(0.96);
+}
+
+.login {
+  margin-right: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.s__info {
+  display: block;
+  margin: 18px 0;
+
+  font-weight: 500;
+}
+
+.user__inputs {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 8%;
+  right: 8%;
+}
+
+/* ############################ LEFT PART #################################### */
+
+/* ############################ RIGHT PART #################################### */
+
+.maestro {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+/*  ############################ RIGHT PART  */
+
+.main__right {
+  flex: 7;
+  padding: 15px 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.shipping__icons {
+  padding: 5px 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ship__icon {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.truck__icon {
+  background-color: green;
+  color: white;
+}
+
+.cart__icon {
+  border: 2px solid green;
+  transition: all ease-in-out 200ms;
+}
+
+.cart__icon:hover {
+  background-color: green;
+  color: white;
+}
+
+.line {
+  height: 1px;
+  width: 100px;
+  margin: 0 15px;
+  background-color: #cbcbcb;
+}
+
+.right__payment {
+  display: flex;
+}
+
+.right__row {
+  flex: 1;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.payment__method {
+  padding: 0 25px;
+}
+
+.p,
+.d {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.options {
+  margin: 15px 0;
+  padding: 10px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.option {
+  border: 1px solid lightgray;
+  width: 105px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 15px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 200ms;
+}
+
+.option:hover,
+.d__option:hover {
+  border-color: yellowgreen;
+}
+
+.d__option.active {
+  border-color: yellowgreen;
+}
+
+.option i {
+  font-size: 24px;
+}
+
+.maestro {
+  border: 1px solid yellowgreen;
+}
+
+.delivery__method {
+  padding: 0 25px;
+}
+
+.d__options {
+  margin: 15px 0;
+  padding: 10px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d__option {
+  padding: 10px;
+  height: 50px;
+  width: 45%;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  margin-right: 15px;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 600;
+}
+
+.d__option i {
+  font-size: 23px;
+}
+
+.cart {
+  flex: 1;
+}
+
+.your__cart {
+  padding: 0 10px;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.cart__items {
+  /* padding: 0 10px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.item__name {
+  width: 150px;
+  padding: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.item__tag {
+  position: absolute;
+  bottom: -5%;
+  left: 20%;
+
+  font-size: 14px;
+  color: gray;
+}
+
+.item__price {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  font-weight: 600;
+}
+
+.item img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.button__totalcost {
+  background-color: rgb(224, 222, 222);
+  border-radius: 15px;
+  width: 280px;
+  padding: 13px 10px;
+
+  cursor: pointer;
+  margin: 20px 0;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all ease-in-out 200ms;
+}
+
+.button__totalcost:hover {
+  transform: scale(0.96);
+}
+
+.button__totalcost button {
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+.button__totalcost span {
+  font-weight: 600;
+}
+
+.cart__footer {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__desc {
+  padding: 10px;
+  width: 190px;
+  margin-left: 15px;
+}
+
+/* ####################################  */
+
+.back {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  padding: 10px;
+  margin-left: 20px;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: all ease-out 100ms;
+}
+
+.back:hover {
+  transform: translateX(-6px);
+}
+
+.call__to__action {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  display: flex;
+}
+
+.cta__button {
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-left: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  text-transform: uppercase;
+
+  transition: all ease-in-out 150ms;
+}
+
+.proceed {
+  border-color: transparent;
+  background-color: green;
+}
+
+.continue:hover,
+.proceed:hover {
+  transform: scale(0.96);
+}
+
+.continue:hover {
+  border-color: green;
+}
+
+.logout {
+  margin-left: 25px;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.userDetails {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.userDetails span {
+  font-size: 22px;
+  font-weight: 600;
+  color: cornflowerblue;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
