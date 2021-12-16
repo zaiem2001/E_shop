@@ -1,5 +1,5 @@
 {
-  "homepage": "http://zaiem2001.github.io/E_shop_page",
+  "homepage": "http://zaiem2001.github.io/E_shop",
   "name": "client",
   "version": "0.1.0",
   "proxy": "https://eshop-backend-pro.herokuapp.com",
