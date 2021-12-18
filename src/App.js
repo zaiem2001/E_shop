@@ -110,9 +110,10 @@ function App() {
       return;
     }
 
-    const url = "login"
-      ? `https://eshop-backend-pro.herokuapp.com/api/users/login`
-      : "https://eshop-backend-pro.herokuapp.com/api/users/register";
+    const url =
+      req === "login"
+        ? `https://eshop-backend-pro.herokuapp.com/api/users/login`
+        : "https://eshop-backend-pro.herokuapp.com/api/users/register";
 
     try {
       const { data } = await axios.post(url, userObj, config);
